@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href=../img/favicon.png />
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+
+    <title>GEA - Haz reseñas</title>
+  </head>
+  <body id="main">
+    <!--NavBar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background-color: #527f47;"
+    >
+      <div class="container-fluid" style="background-color: #527f47;">
+        <a class="navbar-brand" href="../index.html" style="color: #ffffff;"
+          >GEA</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html" style="color: #ffffff;"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html" style="color: #ffffff;"
+                >Perfil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html" style="color: #ffffff;"
+                >Ubicaciones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zonas.html" style="color: #ffffff;"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Buscar un parque, hotel o atracción"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-success" type="button" id="button-addon2">
+            Buscar
+          </button>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/1.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/2.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/3.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/4.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <br />
+      
+      <br />
+      <div class="row">
+        <div class="col-md-8">
+
+            <div class="accordion accordion-flush" id="accordionFlushExample" >
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne" style="background-color:#527F47">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #527F47">
+                      Hacer una reseña
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <center>
+                        <div class="col-md-6">
+                            <div class="card">
+                              <div class="card-body">
+                                <h3>Haz tu reseña</h3>
+                                  <form id="review-form">
+                                      <div class="form-group">
+                                          <input type="text" id="review-place" class="form-control" placeholder="Lugar que calificas" autofocus>
+                                      </div>
+                                      <div class="form-group">
+                                          <textarea id="review-description" rows="5" class="form-control" placeholder="Escribe tu reseña"></textarea>
+                                      </div>
+                                      <label for="customer-experience" class="form-label">Experiencia General</label>
+                                      <input type="range" class="form-range" min="1" max="5" id="customer-experience">
+
+                                      <label for="cuidado-suelos" class="form-label">Cuidado de Suelos</label>
+                                      <input type="range" class="form-range" min="1" max="5" id="cuidado-suelos">
+
+                                      <label for="cuidado-silvestre" class="form-label">Cuidado de Vida Silvestre</label>
+                                      <input type="range" class="form-range" min="1" max="5" id="cuidado-silvestre">
+
+                                      <label for="energias" class="form-label">Uso Responsable de Energías</label>
+                                      <input type="range" class="form-range" min="1" max="5" id="energias">
+
+                                      <label for="cuidado-ruido" class="form-label">Cuidado del Ruido</label>
+                                      <input type="range" class="form-range" min="1" max="5" id="cuidado-ruido">
+                                      
+                                      <label for="apoyo-locales" class="form-label">Apoyo a Locales</label>
+                                      <input type="range" class="form-range" min="1" max="5" id="apoyo-locales">
+
+                                      <button class="btn btn-primary" id="btn-review-form">
+                                        Publicar
+                                      </button>
+                                    </form>
+                              </div>
+                            </div>
+                            
+                          </div>
+                      </center>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+        <div class="col-md-6" id="review-card">
+        </div>
+        <br>
+      </div>
+
+        <br>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Ubicaciones de ecoturismo cerca de ti</h5>
+              <img src="../img/Mapa.jpeg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <div class="row">
+      
+    </div>
+  </div>
+
+    <!--Footer-->
+  <footer class="text-center text-lg-start bg-dark text-muted" id="footer">
+      <section class="" style="background-color: #527F47;">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <br>
+            </div>
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4" style="color: #ffffff;">
+                <i class="fas fa-gem me-3"></i>Contáctanos
+              </h6>
+              <p>
+                  Escríbenos a:<br></br><a
+                  href="mailto:0223332@up.edu.mx"
+                  class="text-reset"
+                  >Emiliano Aceves</a
+                ><br><a
+                href="mailto:0223331@up.edu.mx"
+                class="text-reset"
+                >Katie Lozano</a><br>
+                <a
+                href="mailto:0222474@up.edu.mx"
+                class="text-reset"
+                >María del Mar Amieva</a><br>
+                <a
+                href="mailto:0223736@up.edu.mx"
+                class="text-reset"
+                >Jorge Gutiérrez</a>
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4" style="color: #ffffff;">
+                Navegación por la página
+              </h6>
+              <p>
+                <a href="../index.html" class="text-reset">Acerca de GEA</a>
+              </p>
+              <p>
+                <a href="profile.html" class="text-reset">Perfil personal</a>
+              </p>
+              <p>
+                <a href="zonas.html" class="text-reset">Perfil de zona</a>
+              </p>
+              <p>
+                <a href="main.html" class="text-reset">Página principal de reseñas</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="color: #ffffff;">
+                Redes
+              </h6>
+              <p>
+                <a href="#" target="_blank" class="text-reset">Instagram</a>
+              </p>
+              <p>
+                <a href="#" target="_blank" class="text-reset">Facebook</a>
+              </p>
+              <p>
+                <a href="#" target="_blank" class="text-reset">Twitter</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        ©️ 2021 Copyright: GEA 
+      </div>
+    </footer>
+    <script type="module" src="../scripts/index.js"></script>
+    <script type="module" src="../scripts/crud.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>

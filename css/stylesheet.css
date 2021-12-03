@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&family=Sarabun:ital,wght@1,500&display=swap");
+
+h1,
+h5 {
+  font-family: "Sarabun", sans-serif;
+  color: #f2e8fc;
+}
+
+#banner h1 {
+  font-size: 400%;
+}
+
+#banner h5 {
+  font-size: 200%;
+}
+#texto-descripcion p {
+  color: #527f47;
+  font-size: 110%;
+  text-align: justify;
+}
+#texto-descripcion ul {
+  color: #527f47;
+  font-size: 110%;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+p {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #f2e8fc;
+}
+body {
+  background-color: white;
+}
+#banner {
+  vertical-align: middle;
+  background-color: black;
+  background-image: url("../img/textura-mar.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 1;
+  padding: 20px;
+}
+
+.button {
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 150%;
+  color: #3e505b;
+  font-family: "Sarabun", sans-serif;
+}
+
+.button a {
+  text-decoration: none;
+  font-family: "Sarabun", sans-serif;
+  color: #3e505b;
+}
+
+.footer {
+  font-family: "Sarabun", sans-serif;
+  color: #f2e8fc;
+  background-color: green;
+  margin-top: auto;
+}
+
+#footer p {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #f2e8fc;
+  border-top: 1px solid #369;
+}
+span {
+  font-weight: bold;
+}
+
+#linea {
+  color: #527f47;
+}
+.carousel-item {
+  width: 100%;
+  height: auto;
+  border: 20px;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  border: 20px;
+}
+
+#main {
+  background-image: url("../img/Bosque.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.card {
+  background-color: #527f47;
+}
+.card h5 {
+  font-family: "Sarabun", sans-serif;
+  color: #f2e8fc;
+}
+.card p {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #f2e8fc;
+}
+#perfil {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  text-align: center;
+  border: 20px solid #527f47;
+}
+@media (min-width: 768px) {
+  #profile-container {
+    background-color: #ffffff;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    margin-top: 8px;
+    z-index: -2;
+  }
+}
+#profile-container {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.form-label {
+  color: #ffffff;
+}
+
+#accordionFlushExample {
+  background-color: #527f47;
+  color: #527f47;
+}
+
+#accordion-item {
+  background-color: #527f47;
+  color: #527f47;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+#all-but-footer {
+  min-height: 600px;
+}
+/*cosas de rating
+.container {
+  position: relative;
+  width: 400px;
+  background: #111;
+  padding: 20px 30px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .post {
+  display: none;
+}
+.container .text {
+  font-size: 25px;
+  color: #666;
+  font-weight: 500;
+}
+.container .edit {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container .edit:hover {
+  text-decoration: underline;
+}
+.container .star-widget input {
+  display: none;
+}
+.star-widget label {
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+  color: #fd4;
+}
+input:checked ~ label {
+  color: #fd4;
+}
+input#rate-5:checked ~ label {
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before {
+  content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before {
+  content: "I don't like it ";
+}
+#rate-3:checked ~ form header:before {
+  content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before {
+  content: "I just like it ";
+}
+#rate-5:checked ~ form header:before {
+  content: "I just love it ";
+}
+.container form {
+  display: none;
+}
+input:checked ~ form {
+  display: block;
+}
+form header {
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+form .textarea {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #eee;
+  border: 1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.textarea textarea:focus {
+  border-color: #444;
+}
+form .btn {
+  height: 45px;
+  width: 100%;
+  margin: 15px 0;
+}
+form .btn button {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #444;
+  outline: none;
+  background: #527f47;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+form .btn button:hover {
+  background: #1b1b1b;
+}
+*/

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href=../img/favicon.png />
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+    <title>Tu Perfil - GEA</title>
+  </head>
+  <body id="main">
+    <!--NavBar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background-color: #527f47;"
+    >
+      <div class="container-fluid" style="background-color: #527f47;">
+        <a class="navbar-brand" href="../index.html" style="color: #ffffff;"
+          >GEA</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="main.html" style="color: #ffffff;"
+                >Inicio</a
+              >
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link" href="#" data-toggle= "modal" data-target="#iniModal" style="color: #ffffff;"
+                >Iniciar Sesión</a
+              >
+            </li>-->
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle= "modal" data-target="#regModal" style="color: #ffffff;"
+                >Registrarse</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html" style="color: #ffffff;"
+                >Ubicaciones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zonas.html" style="color: #ffffff;"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div id="all-but-footer">
+        <div class="row">
+            <div class="col-md-3" id="profile-container">
+                <div class="container-fluid">
+                  <br>
+                    <img src="../img/perfil-generica.jpg" alt="" id="perfil">
+                    <br>
+                    <h3>Juan Pérez</h3>
+                    <br>
+                    <a href="profile.html" class="text-reset">Reseñas</a><br>
+                    <a href="profile.html" class="text-reset">Reseñas con fotografía</a><br>
+                    <a href="profile.html" class="text-reset">Lugares que recomeinda</a><br>
+                    <a href="profile.html" class="text-reset">Lugares que no le gustan</a><br>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="card border-dark ">
+                                <div class="card-header">Sign Out</div>
+                                <form id="signout-form" class="card-body">
+                                    <div class="form-group">
+                                        <button id="signout" type="submit" class="btn btn-primary">Sign Out</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+            </div>
+                </div>
+              </div>
+        </div>
+          <!--Modal registrarse-->
+          <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="signup-form">
+                    <div class="form-group">
+                      <input type="text" id="signup-email" class="form-control" placeholder="ejemplo@email.com" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" id="signup-password" class="form-control" placeholder="contraseña" required>
+                  </div>
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--Modal iniciar sesión
+          <div class="modal fade" id="iniModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="signin-form">
+                    <div class="form-group">
+                      <input type="text" id="signin-email" class="form-control" placeholder="ejemplo@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signin-password" class="form-control" placeholder="contraseña" required>
+                    </div>
+                    <button id="signin" type="submit" class="btn btn-primary">Iniciar sesión</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+      
+          <!--SIGN UP FORM
+      
+          <div class="container mb-5">
+            <div class="row justify-content-md-center">
+                <div class="card border-dark ">
+                    <div class="card-header">Sign Up</div>
+                    <form id="signup-form" class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                            <input id="signup-email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                
+                            <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                            <input id="signup-password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                
+                            <button id="signup" type="submit" class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      -->
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-8">
+              <div class="container mb-5" id="sign-in">
+                  <div class="row justify-content-md-center">
+                    <div class="card border-dark ">
+                        <div class="card-header">Sign In</div>
+                        <form id="signin-form" class="card-body">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                                <input id="signin-email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    
+                                <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                                <input id="signin-password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    
+                                <button id="signin" type="submit" class="btn btn-primary">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+                    
+                <!-- SIGN OUT FORM -->
+                
+              <!--Contenido-->
+              
+              <br>
+              <div class="row">
+                  <div class="col-md-8">
+              
+                      <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Hacer una reseña
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                <center>
+                                  <div class="col-md-6">
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <h3>Haz tu reseña</h3>
+                                            <form id="review-form">
+                                                <div class="form-group">
+                                                    <input type="text" id="review-place" class="form-control" placeholder="Lugar que calificas" autofocus>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea id="review-description" rows="5" class="form-control" placeholder="Escribe tu reseña"></textarea>
+                                                </div>
+                                                <label for="customer-experience" class="form-label">Experiencia General</label>
+                                                <input type="range" class="form-range" min="1" max="5" id="customer-experience">
+              
+                                                <label for="cuidado-suelos" class="form-label">Cuidado de Suelos</label>
+                                                <input type="range" class="form-range" min="1" max="5" id="cuidado-suelos">
+              
+                                                <label for="cuidado-silvestre" class="form-label">Cuidado de Vida Silvestre</label>
+                                                <input type="range" class="form-range" min="1" max="5" id="cuidado-silvestre">
+              
+                                                <label for="energias" class="form-label">Uso Responsable de Energías</label>
+                                                <input type="range" class="form-range" min="1" max="5" id="energias">
+              
+                                                <label for="cuidado-ruido" class="form-label">Cuidado del Ruido</label>
+                                                <input type="range" class="form-range" min="1" max="5" id="cuidado-ruido">
+                                                
+                                                <label for="apoyo-locales" class="form-label">Apoyo a Locales</label>
+                                                <input type="range" class="form-range" min="1" max="5" id="apoyo-locales">
+              
+                                                <button class="btn btn-primary" id="btn-review-form">
+                                                  Publicar
+                                                </button>
+                                              </form>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                </center>
+                            </div>
+                          </div>
+                        </div>
+              
+                  </div>
+                  <div class="col-md-6" id="review-card">
+                  </div>
+                  <br>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+        <!-- SIGN IN FORM -->
+        
+    </div>
+    
+
+
+    <!--Footer-->
+<footer class="text-center text-lg-start bg-dark text-muted" id="footer">
+    <section class="" style="background-color: #527F47;">
+      <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <br>
+          </div>
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4" style="color: #ffffff;">
+              <i class="fas fa-gem me-3"></i>Contáctanos
+            </h6>
+            <p>
+                Escríbenos a:<br></br><a
+                href="mailto:0223332@up.edu.mx"
+                class="text-reset"
+                >Emiliano Aceves</a
+              ><br><a
+              href="mailto:0223331@up.edu.mx"
+              class="text-reset"
+              >Katie Lozano</a><br>
+              <a
+              href="mailto:0222474@up.edu.mx"
+              class="text-reset"
+              >María del Mar Amieva</a><br>
+              <a
+              href="mailto:0223736@up.edu.mx"
+              class="text-reset"
+              >Jorge Gutiérrez</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4" style="color: #ffffff;">
+              Navegación por la página
+            </h6>
+            <p>
+              <a href="../index.html" class="text-reset">Acerca de GEA</a>
+            </p>
+            <p>
+              <a href="profile.html" class="text-reset">Perfil personal</a>
+            </p>
+            <p>
+              <a href="zonas.html" class="text-reset">Perfil de zona</a>
+            </p>
+            <p>
+              <a href="main.html" class="text-reset">Página principal de reseñas</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: #ffffff;">
+              Redes
+            </h6>
+            <p>
+              <a href="#" target="_blank" class="text-reset">Instagram</a>
+            </p>
+            <p>
+              <a href="#" target="_blank" class="text-reset">Facebook</a>
+            </p>
+            <p>
+              <a href="#" target="_blank" class="text-reset">Twitter</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      ©️ 2021 Copyright: GEA 
+    </div>
+  </footer>
+
+  <!--Links Bootstrap-->
+  <script type="module" src="../scripts/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  
+  <!--Links BootstrapFirebase-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+
+  <script type="module" src="../scripts/index.js"></script>
+  <script type="module" src="../scripts/crud.js"></script>
+  <script type="module" src="../scripts/signin.js"></script>
+  <script type="module" src="../scripts/signup.js"></script>
+  <script type="module" src="../scripts/signout.js"></script>
+  <script type="module" src="../scripts/statech.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
